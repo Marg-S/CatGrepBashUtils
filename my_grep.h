@@ -3,12 +3,11 @@
 
 #define BUF_SIZE 4096
 
-#include <regex.h>
 #include <bits/getopt_core.h>
-#include <unistd.h>
+#include <regex.h>
 #include <stdio.h>
 #include <string.h>
-
+#include <unistd.h>
 
 struct options {
   int i;

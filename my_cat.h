@@ -1,8 +1,8 @@
 #ifndef S21_CAT
 #define S21_CAT
 
-#include <string.h>
 #include <stdio.h>
+#include <string.h>
 
 struct options {
   int b;

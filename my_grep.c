@@ -34,10 +34,9 @@ int main(int argc, char **argv) {
   }
 
   if (!count_files || (count_files == 1 && !count_patterns)) {
-    fprintf(
-        stderr,
-        "usage: my_grep [-ivclnhso] [-e pattern] [-f file] [pattern] [file "
-        "...]\n");
+    fprintf(stderr,
+            "usage: my_grep [-ivclnhso] [-e pattern] [-f file] [pattern] [file "
+            "...]\n");
     error++;
   }
   if (!error) output(&option, filenames, count_files, patterns, count_patterns);

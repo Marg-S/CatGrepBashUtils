@@ -1,6 +1,5 @@
 #include "my_cat.h"
 
-
 int main(int argc, char **argv) {
   struct options option = {0};
   char *filenames[argc - 1];
@@ -17,7 +16,6 @@ int main(int argc, char **argv) {
 
   return 0;
 }
-
 
 int parse_argument(char *argument, struct options *option) {
   int error = 0;
@@ -69,7 +67,6 @@ int parse_argument(char *argument, struct options *option) {
   }
   return error;
 }
-
 
 void output(struct options *option, char *filenames[], int count_files) {
   FILE *p_file;

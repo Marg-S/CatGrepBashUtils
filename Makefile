@@ -18,4 +18,10 @@ tests_my_grep: my_grep
 clean: 
 	rm -rf *.o my_cat my_grep
 
+style:
+	clang-format -n -style=Google *.[ch]
+
+format_style:
+	clang-format -i -style=Google *.[ch]
+
 .PHONY: all tests_my_cat tests_my_grep clean
